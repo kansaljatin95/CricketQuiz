@@ -1,0 +1,175 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.udacity.cricketquiz.MainActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            style="@style/textviewstyle"
+            android:text="Q1 Who was the first Cricketer to score a double century in ODI?" />
+
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Sachin Tendulkar"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Rohit Sharma"
+                android:textSize="20sp" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Chris Gayle"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="AB De Villiers"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/textviewstyle"
+            android:text="Q2 How many players play in a cricket match?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="22"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="15"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="None of These"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="11"
+                android:textSize="20sp" />
+        </RadioGroup>
+        <TextView
+            style="@style/textviewstyle"
+            android:text="Q3 Which cricketer has scored a 200 in one day cricket?"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/answer3.1"
+                style="@style/boxstyle"
+                android:text="Rohit Sharma"
+                />
+            <CheckBox
+                android:id="@+id/answer3.2"
+                style="@style/boxstyle"
+                android:text="Sachin Tendulkar"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                style="@style/boxstyle"
+                android:text="Suresh Raina"
+                />
+            <CheckBox
+                android:id="@+id/answer3.3"
+                style="@style/boxstyle"
+                android:text="Chris Gayle"/>
+        </LinearLayout>
+        <TextView
+           style="@style/textviewstyle"
+            android:text="Q4 Which is the only palyer to make 400 in a test cricket in an inning?"/>
+        <EditText
+            android:id="@+id/edittext"
+            style="@style/boxstyle"
+            android:hint="Specify only full name"
+            android:inputType="text"/>
+        <TextView
+            style="@style/textviewstyle"
+            android:text="Q5 Which indian player has scored more than 10000 runs in odi Cricket?"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/answer5"
+                style="@style/boxstyle"
+                android:text="Sachin Tendulkar"
+            />
+            <CheckBox
+                android:id="@+id/answer5.1"
+                style="@style/boxstyle"
+                android:text="Sourav Ganguly"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                style="@style/boxstyle"
+                android:text="VVS Laxman"
+                />
+            <CheckBox
+                style="@style/boxstyle"
+                android:text="Virat Kohli"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submitQuiz"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+</ScrollView>
